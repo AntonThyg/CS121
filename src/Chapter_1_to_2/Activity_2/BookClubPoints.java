@@ -1,17 +1,16 @@
-package Chapter_1_to_2.ConditionalsActivity;
-
-import javax.swing.*;
-import java.util.Scanner;
-
 //**********************************************************************************************************************
-//                              Assignment #1
+//                              Activity 2 part 1
 //                              Name: Antone Thygerson
-//                              Date: 8/31/2022
+//                              Date: 9/02/2022
 //**********************************************************************************************************************
 //  User enters amount of books purchased.
 //  assigns them points based on purchases
 //  books to points 0:0,1:5,2:15,3:30,4:60
 //**********************************************************************************************************************
+package Chapter_1_to_2.Activity_2;
+import java.util.Scanner;
+
+
 public class BookClubPoints {
     static Scanner ask = new Scanner(System.in);
     public static void main(String[] args) {

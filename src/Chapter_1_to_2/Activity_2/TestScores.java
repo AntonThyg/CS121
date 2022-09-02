@@ -1,17 +1,18 @@
-package Chapter_1_to_2.ConditionalsActivity;
+//**********************************************************************************************************************
+//                              Activity 2 part 2
+//                              Name: Antone Thygerson
+//                              Date: 9/02/2022
+//**********************************************************************************************************************
+//  User enters test scores.  Program returns a letter grade for each individual test
+//  and return the average grade and letter grade for the average.
+//
+//**********************************************************************************************************************
+package Chapter_1_to_2.Activity_2;
 
-import javax.swing.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
-//**********************************************************************************************************************
-//                              Assignment #1
-//                              Name: Antone Thygerson
-//                              Date: 9/01/2022
-//**********************************************************************************************************************
-//
-//
-//
-//**********************************************************************************************************************
+
 public class TestScores {
     static Scanner ask = new Scanner(System.in);
     public static void main(String[] args) {
@@ -20,20 +21,22 @@ public class TestScores {
         System.out.println("How many tests are you scoring");
         size=ask.nextInt();
         int[] testScores = new int[size];
-        char[] testGrades = new char[size];
         for(int i=0;i<size;i++){
             System.out.print("Test Score "+(i+1)+": ");
             testScores[i]=ask.nextInt();
             //testScores[i]=Integer.parseInt(JOptionPane.showInputDialog("Test Score "+i+": "));
             System.out.println(letterGrade(testScores[i]));
         }
+        double avg = Arrays.stream(testScores).average().getAsDouble();
+        System.out.println("Grade: "+avg+"|"+letterGrade(avg));
+
     }
 //**********************************************************************************************************************
 //  TestScores:letterGrade(int i)
 //  Parameters: int i
 //  returns letter grade based on integer input (F<60,D=60-69,C=70-79,B=80-89,A=90-100)
 //**********************************************************************************************************************
-    public static char letterGrade(int i){
+    public static char letterGrade(double i){
         if(i<60){
             return 'F';
         }else if(i>=60&&i<70){
