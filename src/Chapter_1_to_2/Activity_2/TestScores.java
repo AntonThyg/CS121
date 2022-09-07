@@ -1,10 +1,10 @@
 //**********************************************************************************************************************
-//                              Activity 2 part 2
+//                              Activity 3 part 1
 //                              Name: Antone Thygerson
 //                              Date: 9/02/2022
 //**********************************************************************************************************************
-//  User enters test scores.  Program returns a letter grade for each individual test
-//  and return the average grade and letter grade for the average.
+//  User enters an integer.  Program prints Even if int is even and odd if int is odd.
+//
 //
 //**********************************************************************************************************************
 package Chapter_1_to_2.Activity_2;
