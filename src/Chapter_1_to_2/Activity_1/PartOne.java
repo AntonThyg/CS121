@@ -9,7 +9,6 @@ package Chapter_1_to_2.Activity_1;
 //
 //**********************************************************************************************************************
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class PartOne {
