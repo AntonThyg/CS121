@@ -1,0 +1,2 @@
+Microsoft,7,1975
+\nNvidia,5,1993
