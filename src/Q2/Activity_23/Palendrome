@@ -1,0 +1,10 @@
+main method{
+    calls the palendrome method with true and false examples.
+}
+palendrome method(palendrome, probably the part of the string you're at){
+    checks for first and last variable of string{
+        continues recursing
+    }else they aren't the same{
+        returns false
+    }
+}
