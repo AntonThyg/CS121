@@ -1,4 +1,6 @@
-package PokemonProject;
+package PokemonProject2;
+
+import PokemonProject.Move;
 
 public class Pokemon {
     String name,type1,type2;
@@ -9,8 +11,8 @@ public class Pokemon {
     int spAtk;
     int spDef;
     int speed;
-    Move move;
-    public Pokemon(int num,String name,String type1,String type2,int total,int hp,int atk, int def, int spAtk, int spDef, int speed){
+    PokemonProject.Move move;
+    public Pokemon(int num, String name, String type1, String type2, int total, int hp, int atk, int def, int spAtk, int spDef, int speed){
         this.num=num;
         this.name=name;
         this.type1=type1;
@@ -62,7 +64,7 @@ public class Pokemon {
         }
     }
 
-    public void setMove(Move move) {
+    public void setMove(PokemonProject.Move move) {
         this.move = move;
     }
     public Move getMove() {

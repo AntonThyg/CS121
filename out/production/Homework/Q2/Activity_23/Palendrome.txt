@@ -1,0 +1,16 @@
+main method{
+    calls the palendrome method with true and false examples.
+}
+palendrome method(string parameter){
+    checks if there is 1 or fewer letters remaining{
+        return true;
+    }
+    checks if first letter is equal to last letter{
+        returns palendrome(removes first and last letter in this call);
+    }else{
+        returns false;
+    }
+}
+
+The time complexity of this palendrome solver would be the same as the length of the palendrome/string you are checking
+because the direct.

@@ -1,0 +1,16 @@
+main method(String...args){
+    calls characterCount method();
+}
+
+public static int characterCount(String s, char character you want to track){
+    checks if its done going through the loop{
+        return 0 to break the recursive loop;
+    }
+    checks if the first character in the string is equal to the char you're tracking{
+        return 1 + characterCount(make sure to remove hte first character before you continue iterating,same character as before);
+    }else{
+        return characterCount(make sure to remove the first character even though it's not equal,same character);
+    }
+}
+
+the time complexity of this program is, like with the palindromes, the same as the length of hte string you are parsing through.

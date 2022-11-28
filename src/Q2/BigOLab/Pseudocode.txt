@@ -1,0 +1,9 @@
+BigO(1) complexity{
+    Singular print statement
+}
+BigO(n) complexity{
+    For loop that runs n number of times, or while loop.
+}
+BigO(n²) complexity{
+    For loop within a for loop that will run n number of times n number of times.
+}
